@@ -1,0 +1,11 @@
+<h2>All da Peoples </h2>
+<br>
+<% @employees.each do |employee| %>
+    <li><%= link_to "#{employee.first_name} #{employee.last_name}", employee_path(employee) %></li>
+<% end %>
+
+<a href='/employees/new'>
+<button> Join the Team!</button>
+</a>
+
+
