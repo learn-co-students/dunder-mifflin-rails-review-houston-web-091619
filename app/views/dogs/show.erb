@@ -1,0 +1,20 @@
+<h1>Name</h1>
+<h3> <%= @dog.name %> </h3>
+<h3> <%= @dog.breed %> </h3>
+<h3> <%= @dog.age %> </h3>
+</ol>
+
+<h1> Employee </h1>
+<%@dog.employees.each do |employee|%>
+<%=employee.first_name%>
+<%end%>
+
+</div>
+
+<style>
+
+body{
+       margin: auto;
+       width: 75%;
+       border: 3px solid black;
+   }
